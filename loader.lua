@@ -49,7 +49,7 @@ Frame.Position = UDim2.fromScale(0.35,0.375)
 Frame.BackgroundColor3 = Color3.fromRGB(20,20,20)
 
 local Box = Instance.new("TextBox", Frame)
-Box.PlaceholderText = "Enter QuickzHub Key"
+Key = tostring(game:PromptInput("Enter your QuickzHub key:")):gsub("%s+", "")
 Box.Size = UDim2.fromScale(0.9,0.3)
 Box.Position = UDim2.fromScale(0.05,0.25)
 
@@ -66,3 +66,4 @@ Button.MouseButton1Click:Connect(function()
         player:Kick("Invalid QuickzHub Key")
     end
 end)
+
